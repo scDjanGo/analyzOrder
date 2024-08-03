@@ -1,0 +1,219 @@
+.user-container {
+
+    .menuItems {
+
+
+
+        .up,
+        .down {
+            padding: 40px 10px;
+            background-color: rgba(172, 255, 47, 0.567);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 300px));
+            justify-content: center;
+            gap: 10px;
+
+
+            .food {
+                padding: 10px;
+                max-width: 300px;
+                width: 100%;
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color: white;
+                box-shadow: 1px 1px 5px black;
+
+                .elem {
+                    display: flex;
+                    align-items: start;
+                    gap: 5px;
+
+                    img {
+                        border: 1px solid black;
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 10px;
+                    }
+
+                    .zag {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 25px;
+
+                        font-weight: 700;
+                        font-size: 18px;
+
+                        p {
+                            font-size: 24px;
+                            color: rgb(6, 6, 162);
+                        }
+                    }
+                }
+
+
+                .button {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: center;
+
+                    button {
+                        width: 35px;
+                        height: 30px;
+                        border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        color: white;
+                        font-size: 28px;
+                        cursor: pointer;
+
+
+                        &:first-child {
+                            background-color: red;
+                        }
+
+                        &:last-child {
+                            background-color: green;
+                        }
+                    }
+
+                    p {
+                        font-size: 28px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .down {
+            padding-bottom: 180px;
+            background-color: rgba(117, 96, 212, 0.314);
+        }
+
+        .bron {
+
+            .selected-items {
+                padding: 40px 10px 160px 10px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: blue;
+                gap: 35px;
+
+                h3 {
+                    color: white;
+                    font-size: 28px;
+                    font-weight: 700;
+                }
+
+                .inner {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(290px, 300px));
+                    justify-content: center;
+                    gap: 10px;
+
+                    .selected-item {
+                        padding: 10px;
+                        max-width: 300px;
+                        width: 100%;
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-between;
+                        border: 1px solid black;
+                        border-radius: 10px;
+                        background-color: white;
+                        box-shadow: 1px 1px 5px black;
+
+
+                        img {
+                            border: 1px solid black;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 10px;
+                        }
+
+                        .zag {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 5px;
+
+                            font-weight: 700;
+                            font-size: 18px;
+
+                            p {
+                                font-size: 20px;
+                            }
+                        }
+
+                        button {
+                            background-color: rgba(255, 255, 255, 0);
+                            border: 0;
+                            height: 100%;
+                            display: flex;
+                            div {
+                                padding: 5px;
+                                border-radius: 5px;
+                                background-color: red;
+                                cursor: pointer;
+                                
+                                img {
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .order {
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .inner {
+                padding: 20px 20px 10px 20px;
+                max-width: 800px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+                background-color: rgba(8, 188, 8, 0.814);
+                border-radius: 10px;
+
+                h2 {
+                    font-size: 34px;
+                    color: white;
+                    font-weight: 700;
+                }
+
+                button {
+                    padding: 5px 0;
+                    width: 100%;
+                    font-size: 34px;
+                    color: white;
+                    font-weight: 700;
+                    background-color: green;
+                    border: 0;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

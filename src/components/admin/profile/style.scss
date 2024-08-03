@@ -1,0 +1,94 @@
+.profile-container {
+    background-color: rgba(128, 128, 128, 0.104);
+    min-height: 100vh;
+    height: 100%;
+
+    .inner {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 320px));
+        justify-content: center;
+        gap: 25px;
+
+        .branches {
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            background-color: white;
+        }
+
+        .about-filial {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 35px;
+
+            h2 {
+                border-bottom: 1px solid black;
+                align-items: center;
+                font-size: 32px;
+                font-weight: 700;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+
+            p {
+                border-bottom: 1px solid black;
+                font-size: 22px;
+                font-weight: 600;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+
+            h3 {
+                border-bottom: 1px solid black;
+                font-size: 22px;
+                font-weight: 600;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .static {
+            display: flex;
+            gap: 15px;
+            align-items: start;
+
+            .managers, 
+            .foods {
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 10px 20px;
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 25px;
+                cursor: pointer;
+                color: black;
+
+                h2 {
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

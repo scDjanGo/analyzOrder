@@ -1,0 +1,143 @@
+.salesUser-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    background-color: blue;
+    min-height: 100vh;
+
+    button {
+        padding: 20px 0 0 20px;
+        width: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 0);
+        border: 0;
+
+        p {
+            cursor: pointer;
+            background-color: white;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+    }
+
+    h2 {
+        font-size: 38px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .empty {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-size: 28px;
+            color: white;
+            font-weight: 700;
+        }
+    }
+
+    .inner {
+        border: 1px solid white;
+        padding: 2px;
+
+        * {
+            padding: 15px;
+            border: 1px solid white;
+            color: white;
+            font-size: 38px;
+            font-weight: 500;
+        }
+
+        tbody {
+            * {
+                text-align: end;
+            }
+
+            tr>td:first-child {
+                text-align: start;
+                font-size: 34px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .total {
+        width: 100%;
+        padding: 20px;
+
+        h3 {
+            text-align: end;
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .salesUser-container {
+
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .outer {
+            padding: 0 10px;
+        }
+
+        .inner {
+
+            * {
+                padding: 5px;
+                font-size: 24px;
+            }
+
+            the
+
+            tbody {
+
+                tr>td:first-child {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 800px) {
+    .salesUser-container {
+
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .inner {
+
+            * {
+                font-size: 16px;
+            }
+
+            tbody {
+
+                tr>td:first-child {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .total {
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+}

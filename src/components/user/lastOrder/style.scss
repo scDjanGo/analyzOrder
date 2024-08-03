@@ -1,0 +1,89 @@
+.lastOrder-container {
+    height: 100vh;
+    background-color: rgba(172, 255, 47, 0.567);
+
+    .total,
+    .empty {
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 0 0 10px 10px;
+        background-color: blue;
+        box-shadow: 1px 1px 10px black;
+    } 
+
+    .inner {
+        padding: 40px 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(290px, 300px));
+        justify-content: center;
+        gap: 10px;
+
+
+        .food {
+            padding: 10px;
+            max-width: 300px;
+            width: 100%;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 1px 1px 5px black;
+
+            .elem {
+                display: flex;
+                align-items: start;
+                gap: 5px;
+
+                img {
+                    border: 1px solid black;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 10px;
+                }
+
+                .zag {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+
+                    font-weight: 700;
+                    font-size: 18px;
+
+                    p {
+                        font-size: 24px;
+                        color: rgb(6, 6, 162);
+                    }
+                }
+            }
+
+
+            .button {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                justify-content: end;
+                height: 100%;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    color: white;
+                    font-weight: 500;
+                    font-size: 18px;
+
+                    padding: 5px;
+                    background-color: blue;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

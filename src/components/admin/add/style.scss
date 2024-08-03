@@ -1,0 +1,100 @@
+.add-container {
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    position: relative;
+
+    .fetching {
+        padding: 20px;
+
+        .message {
+            p {
+                padding-bottom: 5px;
+                color: white;
+                font-size: 20px;
+                nav-down: 700;
+                border-bottom: 3px solid white;
+            }
+        }
+    }
+
+    a {
+        position: absolute;
+        top: 5%;
+        left: 20px;
+        padding: 10px 20px;
+        font-size: 22px;
+        font-weight: 600;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    form {
+        margin-top: 35px;
+        padding: 20px;
+        max-width: 800px;
+        width: 100%;
+        background-color: white;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+
+        div {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: relative;
+
+            span {
+                font-weight: 700;
+            }
+
+            input {
+                border: 0;
+                border-bottom: 1px solid black;
+                font-size: 20px;
+                font-weight: 700;
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+
+            img {
+                width: 28px;
+                position: absolute;
+                top: 15px;
+                right: -5px;
+                cursor: pointer;
+            }
+        }
+
+        button {
+            margin-top: 25px;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            border: 0;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        p {
+            padding-top: 25px;
+            font-size: 18px;
+            color: red;
+        }
+    }
+}
