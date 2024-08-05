@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./style.scss";
-import { Link, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
+import { Fetching } from "../../layout/fetching";
 import axios from "axios";
 
 function AllReport() {
@@ -42,6 +43,7 @@ function AllReport() {
   };
 
   useEffect(() => {
+    setReports(false)
     axios
       .get(
         `https://analizesystem.pythonanywhere.com/api/v1/branch_sales_report/${params.get(
@@ -117,7 +119,9 @@ function AllReport() {
 
   return (
     <div className="allReport-container">
-      {reports.length > 0 ? (
+      {reports ? 
+      
+      reports.length > 0 ? (
         <>
           <div className="reports">
             {reports.map((item, index) => (
@@ -145,8 +149,16 @@ function AllReport() {
           </div>
         </>
       ) : (
-        <></>
-      )}
+        <div className="notSoll">
+          <p>
+            Не было продаж...
+          </p>
+        </div>
+      )
+      :
+      <Fetching />
+      }
+
     </div>
   );
 }
