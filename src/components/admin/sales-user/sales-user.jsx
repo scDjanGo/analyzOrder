@@ -18,8 +18,6 @@ function SalesUser() {
         )}/`
       )
       .then((res) => {
-        console.log(res.data);
-        
         setSales(
           Object.entries(res.data.products).sort(
             (a, b) => b[1].quantity - a[1].quantity

@@ -45,7 +45,7 @@ function HeaderAdmin({ setKray }) {
           <div className="inner" onClick={(e) => e.stopPropagation()}>
             {/* <Link to={"/foods"} onClick={handleSidebar}>Меню</Link>
             <Link to={"/users"} onClick={handleSidebar}>Работники</Link> */}
-            <Link>Отчет за все время</Link>
+            {/* <Link>Отчет за все время</Link> */}
             <Link onClick={handleExit}>Выйти с профиля</Link>
           </div>
         </div>

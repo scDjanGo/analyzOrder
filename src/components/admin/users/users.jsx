@@ -5,7 +5,6 @@ import { Link, useLocation, useSearchParams } from "react-router-dom";
 
 function Users() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const ifMe = JSON.parse(localStorage.getItem("user"));
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -14,7 +13,6 @@ function Users() {
         `https://analizesystem.pythonanywhere.com/api/v1/branches/${searchParams.get('branchId')}/`
       )
       .then((response) => {
-        console.log(response.data);
         setUsers(response.data.managers);
       })
       .catch((err) => console.error(err));

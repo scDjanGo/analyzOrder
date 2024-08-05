@@ -2,13 +2,13 @@ import "./style.scss";
 import { useState, useEffect } from "react";
 import { Fetching } from "../../layout/fetching";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Profile() {
-  const navigate = useNavigate();
   const [myAccount, setMyAccount] = useState(null);
   const [fetching, setFetching] = useState(false);
   const [message, setMessage] = useState("");
+  const [allReport, setAllReport] = useState(null);
 
   useEffect(() => {
     const local = JSON.parse(localStorage.getItem("user"));
@@ -28,6 +28,10 @@ function Profile() {
     }
   }, []);
 
+  const sessionGet = (e) => {
+    sessionStorage.setItem("branchName", JSON.stringify(e));
+  };
+
   return (
     <div className="profile-container">
       {fetching ? (
@@ -42,6 +46,15 @@ function Profile() {
               <>
                 {myAccount.map((item, index) => (
                   <div key={index} className="branches">
+                    <Link
+                      onClick={() => sessionGet(item.name)}
+                      to={`allReport?branchId=${item.id}`}
+                      onClick={() => sessionGet(item.name)}
+                      className="report"
+                    >
+                      <h5>Полный отчет</h5>
+                    </Link>
+
                     <div className="about-filial">
                       <h2>
                         <span>

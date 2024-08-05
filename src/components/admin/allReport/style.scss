@@ -1,0 +1,154 @@
+.allReport-container {
+    padding: 40px 20px;
+    background-color: blue;
+    min-height: 100vh;
+
+    * {
+        color: white;
+    }
+
+
+
+    .inner {
+        border: 1px solid white;
+        padding: 2px;
+
+        * {
+            padding: 15px;
+            border: 1px solid white;
+            font-size: 38px;
+            font-weight: 500;
+        }
+
+        tbody {
+            * {
+                text-align: end;
+            }
+
+            tr>td:first-child {
+                text-align: start;
+                font-size: 34px;
+                font-weight: 600;
+            }
+        }
+    }
+
+
+    .reports {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+
+        .report {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 15px;
+
+            h2 {
+                font-size: 28px;
+                font-weight: 700;
+            }
+
+            .total {
+                width: 100%;
+                display: flex;
+                justify-content: end;
+
+                h3 {
+                    font-size: 24px;
+                    nav-down: 600;
+                }
+            }
+
+        }
+    }
+
+    .totalAll {
+        border: 1px solid black;
+
+        * {
+            color: black;
+        }
+
+        table {
+            border: 1px solid black;
+
+            * {
+                border: 1px solid black;
+            }
+        }
+
+        margin-top: 25px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        background-color: white;
+    }
+}
+
+
+
+@media(max-width: 1200px) {
+    .allReport-container {
+
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .outer {
+            padding: 0 10px;
+        }
+
+        .inner {
+
+            * {
+                padding: 5px;
+                font-size: 24px;
+            }
+
+            the tbody {
+
+                tr>td:first-child {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 800px) {
+    .allReport-container {
+
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .inner {
+
+            * {
+                font-size: 16px;
+            }
+
+            tbody {
+
+                tr>td:first-child {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .total {
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+}

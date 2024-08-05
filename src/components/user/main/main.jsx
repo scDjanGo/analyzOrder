@@ -40,7 +40,8 @@ function Main() {
         .finally(() => setFetching((prev) => !prev));
     } else {
       <Layout unload={unload} setUnload={setUnload} />;
-      setUnload((prev) => !prev);
+      setUnload(prev => !prev);
+      console.log("blya");
     }
   }, []);
 
@@ -86,7 +87,7 @@ function Main() {
 
     bestMenu.forEach((item, index) => {
       if (counts[index] > 0) {
-        selected.push({ ...item, quantity: counts[index] });
+        selected.push({ product: item.id, quantity: counts[index] });
         lastOrder.push({...item, quantity: counts[index] })
       }
     });
@@ -106,11 +107,13 @@ function Main() {
         items: selected,
       };
 
+      console.log(order);
+      
 
       axios
         .post(`https://analizesystem.pythonanywhere.com/api/v1/korzina/`, order)
         .then((res) => {
-          setCounts([])
+          setCounts(prev => prev.fill(0))
           setTotalCount(0)
           setSelectedItems([])
           setCn(prev => prev.fill(0))

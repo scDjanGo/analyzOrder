@@ -11,6 +11,7 @@ import HeaderAdmin from "./components/admin/header/header";
 import { Add } from "./components/admin/add/add";
 import { Foods } from "./components/admin/foods/foods";
 import { SalesUser } from "./components/admin/sales-user/sales-user";
+import { AllReport } from "./components/admin/allReport/allReport";
 
 function App() {
   const [myAccount, setMyAccount] = useState(false);
@@ -39,6 +40,7 @@ function App() {
         <Route path="/foods" element={<><HeaderAdmin/><Foods /></>} />
         <Route path="/addUser" element={<Add />} />
         <Route path="/salesUser" element={<><HeaderAdmin/><SalesUser /></>}/>
+        <Route path="/allReport" element={<><HeaderAdmin/><AllReport /></>}/>
       </Routes>
     </div>
   );

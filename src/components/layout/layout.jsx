@@ -10,11 +10,12 @@ function Layout({ifMe, unload}) {
   const [kray, setKray] = useState(false);
 
   useEffect(() => {
+    
     const user = JSON.parse(localStorage.getItem("user"));
     if (user) {
       setMyAccount(user);
       if(user.role === 'Boss') {
-        ifMe(prev => !prev)
+        ifMe(true)
       }else {
         ifMe(false)
       }

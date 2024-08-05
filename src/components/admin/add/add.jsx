@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Add() {
-  const ifMe = JSON.parse(localStorage.getItem("user"))
   const [show, setShow] = useState(false);
   const [message, setMessage] = useState('')
   const [fetching, setFetching] = useState(false)
