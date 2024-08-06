@@ -1,0 +1,134 @@
+.lastReport-container {
+    padding: 40px 20px;
+    min-height: 100vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+
+    .name {
+        width: 100%;
+        text-align: center;
+
+        font-weight: 700;
+        font-size: 28px;
+        color: white;
+    }
+    
+    .empty {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 35px;
+        padding-bottom: 200px;
+
+        h2 {
+            font-size: 28px;
+            color: white;
+            font-weight: 700;
+        }
+    }
+
+    .inner {
+        border: 1px solid white;
+        padding: 2px;
+
+        * {
+            padding: 15px;
+            border: 1px solid white;
+            color: white;
+            font-size: 38px;
+            font-weight: 500;
+        }
+
+        tbody {
+            * {
+                text-align: end;
+            }
+
+            tr>td:first-child {
+                text-align: start;
+                font-size: 34px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .total {
+        width: 100%;
+        padding: 20px;
+
+        h3 {
+            text-align: end;
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+        }
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .lastReport-container {
+
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .outer {
+            padding: 0 10px;
+        }
+
+        .inner {
+
+            * {
+                padding: 5px;
+                font-size: 24px;
+            }
+
+            the
+
+            tbody {
+
+                tr>td:first-child {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 800px) {
+    .lastReport-container {
+
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .inner {
+
+            * {
+                font-size: 16px;
+            }
+
+            tbody {
+
+                tr>td:first-child {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .total {
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+}

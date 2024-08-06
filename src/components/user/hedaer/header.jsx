@@ -39,9 +39,7 @@ function Header({setKray}) {
         <div className="sidebar" onClick={handleSidebar}>
           <div className="inner" onClick={(e) => e.stopPropagation()}>
             <Link onClick={handleSidebar} to={'/lastOrder'}>Последний заказ</Link>
-            <Link>Дневной отчет</Link>
-            <Link>Отчет за все время</Link>
-            <Link>Закрыть смену</Link>
+            <Link onClick={handleSidebar} to={"lastReport"}>Отчет за все время</Link>
             <Link onClick={handleExit}>Выйти с профиля</Link>
           </div>
         </div>

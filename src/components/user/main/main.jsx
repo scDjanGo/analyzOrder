@@ -106,8 +106,6 @@ function Main() {
         manager: user.id,
         items: selected,
       };
-
-      console.log(order);
       
 
       axios

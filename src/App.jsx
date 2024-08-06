@@ -12,6 +12,7 @@ import { Add } from "./components/admin/add/add";
 import { Foods } from "./components/admin/foods/foods";
 import { SalesUser } from "./components/admin/sales-user/sales-user";
 import { AllReport } from "./components/admin/allReport/allReport";
+import { LastReport } from "./components/user/lastReport/lastReport";
 
 function App() {
   const [myAccount, setMyAccount] = useState(false);
@@ -32,6 +33,7 @@ function App() {
               <Route index element={<Main />} />
               <Route path="main" element={<Main />} />
               <Route path="lastOrder" element={<LastOrder />} />
+              <Route path="lastReport" element={<LastReport />} />
             </>
           )}
         </Route>
