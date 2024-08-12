@@ -225,7 +225,6 @@ function Main() {
               </div>
 
               <div className="bron">
-                {selectedItems.length > 0 && (
                   <div className="selected-items">
                     <h3>Выбранные позиции</h3>
                     <div className="inner">
@@ -251,7 +250,6 @@ function Main() {
                       ))}
                     </div>
                   </div>
-                )}
               </div>
 
               <div className="order">

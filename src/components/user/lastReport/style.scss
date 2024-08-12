@@ -1,11 +1,11 @@
 .lastReport-container {
     padding: 40px 20px;
     min-height: 100vh;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 35px;
+    background-color: lighten(#5ac8fa, 20%);
 
     .name {
         width: 100%;
@@ -13,7 +13,7 @@
 
         font-weight: 700;
         font-size: 28px;
-        color: white;
+        color: black;
     }
     
     .empty {
@@ -27,21 +27,31 @@
 
         h2 {
             font-size: 28px;
-            color: white;
+            color: black;
             font-weight: 700;
         }
     }
 
     .inner {
-        border: 1px solid white;
-        padding: 2px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
 
         * {
             padding: 15px;
-            border: 1px solid white;
-            color: white;
+            border: 1px solid black;
+            color: black;
             font-size: 38px;
             font-weight: 500;
+            border-radius: 5px;
+        }
+
+        thead {
+            
+            td {
+                background-color: lighten(grey, 45%);
+            }
         }
 
         tbody {
@@ -54,6 +64,7 @@
                 font-size: 34px;
                 font-weight: 600;
             }
+
         }
     }
 
@@ -63,7 +74,7 @@
 
         h3 {
             text-align: end;
-            color: white;
+            color: black;
             font-size: 28px;
             font-weight: 700;
         }

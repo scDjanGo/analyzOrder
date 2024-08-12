@@ -1,6 +1,6 @@
 .lastOrder-container {
     height: 100vh;
-    background-color: rgba(172, 255, 47, 0.567);
+    background-color: lighten(blue, 45%);
 
     .total,
     .empty {
@@ -17,22 +17,21 @@
     .inner {
         padding: 40px 10px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(290px, 300px));
+        grid-template-columns: repeat(auto-fill, minmax(320px, 300px));
         justify-content: center;
         gap: 10px;
 
 
         .food {
             padding: 10px;
-            max-width: 300px;
+            max-width: 320px;
             width: 100%;
             display: flex;
             align-items: start;
             justify-content: space-between;
-            border: 1px solid black;
             border-radius: 10px;
             background-color: white;
-            box-shadow: 1px 1px 5px black;
+            box-shadow: 1px 1px 3px black;
 
             .elem {
                 display: flex;

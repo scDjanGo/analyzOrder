@@ -30,7 +30,7 @@ function LastReport() {
       {sales ? (
         sales.length > 0 ? (
           <>
-      <h2 className="name">{myId.username}</h2>
+      <h2 className="name">Отчет</h2>
             <table className="inner">
               <thead>
                 <tr>

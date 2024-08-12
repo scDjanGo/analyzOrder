@@ -1,10 +1,10 @@
 .allReport-container {
     padding: 40px 20px;
-    background-color: blue;
+    background-color: lighten(#5ac8fa, 20%);
     min-height: 100vh;
 
     * {
-        color: white;
+        color: black;
     }
 
     .notSoll {
@@ -21,14 +21,18 @@
 
 
     .inner {
-        border: 1px solid white;
+        border: 1px solid black;
         padding: 2px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
 
         * {
             padding: 15px;
-            border: 1px solid white;
+            border: 1px solid black;
             font-size: 38px;
             font-weight: 500;
+            border-radius: 5px;
         }
 
         tbody {
@@ -77,6 +81,7 @@
     }
 
     .totalAll {
+        border-radius: 10px;
 
         * {
             color: black;

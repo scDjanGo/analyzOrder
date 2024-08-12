@@ -1,6 +1,7 @@
 @import '../../../index.scss';
 
 .users-container {
+    background-color: lighten(#5ac8fa, 20%);
 
     .updateFood {
         padding: 20px;
@@ -152,6 +153,7 @@
     .inner {
 
         .user {
+            background-color: white;
 
 
             .food {

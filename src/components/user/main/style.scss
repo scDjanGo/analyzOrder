@@ -7,24 +7,23 @@
         .up,
         .down {
             padding: 40px 10px;
-            background-color: rgba(172, 255, 47, 0.567);
+            background-color: #d1e0e8;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(290px, 300px));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 300px));
             justify-content: center;
             gap: 10px;
 
 
             .food {
                 padding: 10px;
-                max-width: 300px;
+                max-width: 320px;
                 width: 100%;
                 display: flex;
                 align-items: start;
                 justify-content: space-between;
-                border: 1px solid black;
                 border-radius: 10px;
                 background-color: white;
-                box-shadow: 1px 1px 5px black;
+                box-shadow: 1px 1px 3px black;
 
                 .elem {
                     display: flex;
@@ -67,6 +66,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        border: 0;
 
                         color: white;
                         font-size: 28px;
@@ -92,7 +92,7 @@
 
         .down {
             padding-bottom: 180px;
-            background-color: rgba(117, 96, 212, 0.314);
+            background-color: rgba(117, 96, 212, 0.2);
         }
 
         .bron {
@@ -115,21 +115,20 @@
 
                 .inner {
                     display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(290px, 300px));
+                    grid-template-columns: repeat(auto-fill, minmax(320px, 300px));
                     justify-content: center;
                     gap: 10px;
 
                     .selected-item {
                         padding: 10px;
-                        max-width: 300px;
+                        max-width: 320px;
                         width: 100%;
                         display: flex;
                         align-items: start;
                         justify-content: space-between;
-                        border: 1px solid black;
                         border-radius: 10px;
                         background-color: white;
-                        box-shadow: 1px 1px 5px black;
+                        box-shadow: 1px 1px 3px black;
 
 
                         img {
